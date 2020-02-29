@@ -1,35 +1,35 @@
-# Tiny Tetris
+# Python Tetris
 
-## About
+This is the repository with non-finished implementation of the tetris. Please, be patient because I am writing it in my free time :-).
 
-A Tetris implementation that "fits on a business card" 
+### Prerequisites
 
-Dimensions: 20 lines x 80 characters
+The game is based on the pygame library. You can install it using the pip tool.
 
-<img src="https://i.imgur.com/TY4szDq.gif" alt="Game in progress" width="40%">
-
-## Rules and Limitations
-
-- No encoding
-- Only standard library and curses allowed
-
-## Play It! 
-
-```bash
-git clone https://github.com/nickmpaz/tiny-tetris && cd tiny-tetris && python3 tiny-tetris.py
 ```
-**Note**: If you are using Windows, you most likely need to install `windows-curses` for compatibility:
-```bash
-pip install windows-curses
+pip3 install --user pygame
 ```
-## Controls
 
-- up: rotate
-- left: move left
-- right: move right
-- down: move down
-- ctrl+c: quit
+Provided code is written for Python3. After that, you can run the game with:
 
-## Acknowledgements
+```
+python3 tetris.py
+```
 
-Inspired by TinySki https://github.com/KilledByAPixel/TinySki
+
+## Control
+
+The following list contains used control keys:
+
+* *Arrows* - used for the moving of a tetris block
+* *Space*  - rotates the tetris block
+* *q*      - quit the game
+* *p*      - pause the game
+
+## Authors
+
+* **Pavel Benáček** - *coding of the game*
+
+## License
+
+This project is licensed under the GNU GPL License - see the [LICENSE.md](LICENSE.md) file for details
