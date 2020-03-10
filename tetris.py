@@ -1,4 +1,6 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
+# -*- coding: utf-8-*-
+import os, sys
 
 # File: tetris.py 
 # Description: Main file with tetris game.
@@ -19,6 +21,7 @@
 
 import pygame
 import pdb
+#import sys
 
 import random
 import math
@@ -121,7 +124,7 @@ class Tetris(object):
         # Setup the time to fire the move event. Minimal allowed value is 1
         speed = math.floor(constants.MOVE_TICK / self.speed)
         speed = max(1,speed)
-        pygame.time.set_timer(constants.TIMER_MOVE_EVENT,speed)
+        pygame.time.set_timer(int(constants.TIMER_MOVE_EVENT),int(speed))
  
     def run(self):
         # Initialize the game (pygame, fonts)
